@@ -1,0 +1,31 @@
+.tabs_wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+.tabs_list {
+  display: flex;
+  min-width: max-content; /* Ensures the list doesn't shrink */
+}
+
+.tabs_list::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+/* Optional: Add some padding to the tabs for better touch experience */
+.tabs_list > * {
+  padding: 10px 50px;
+}
+
+.tabs_trigger[data-state="active"] {
+  color: black !important;
+  border-radius: 5px !important;
+  padding: 6px 30px !important;
+  background-color: rgb(
+    243 244 246
+  ) !important; /* Warna latar belakang untuk tab yang aktif */
+}
+
+ol.alpha_list {
+  list-style-type: lower-alpha;
+}
